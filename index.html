@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-Secunciales</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/js.ico">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- scrip-->
+    <script src="App1.js" defer></script>
+</head>
+
+<body>
+    
+    <!-- Close Top Nav -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Js
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Secuenciales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Alternativos.html">Alternativos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Repeticion.html">Repetición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Otros.html">Otros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+    
+    <!-- Start Section -->
+    <section class="container py-5">
+        <div class="row text-center pt-5 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Ejercicios Secuenciales</h1>
+            </div>
+        </div>
+         
+        <div class="row">
+            <!-- Ejercicio 1 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana1">
+                    <div class="h1 text-success text-center"> <i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"/>
+                        <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"/>
+                      </svg> </i></div>
+                    
+                    <h2 class="h5 mt-4 text-center">1. Cálculo de grados, minutos y segundos</h2>
+                </div>
+                
+                 <!-- Ventana modal -->
+                <div class="modal fade" id="ventana1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">1. Cálculo de grados, minutos y segundos</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="altura" class="col-form-label">Altura del poste (h):</label>
+                                    <input type="text" class="form-control" id="altura" placeholder="Ingrese un valor mayores que 0">
+                                    
+                                    <div id="alerta1" class="alert alert-danger" style="display: none;"></div>
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sombra" class="col-form-label">Largo de la sombra (s):</label>
+                                    <input type="text" class="form-control" id="sombra" placeholder="Ingrese un valor mayor que 0">
+                                    <div id="alerta2" class="alert alert-danger" style="display: none;"></div>
+
+                                </div>
+                            </form>
+                            <h5>Resultado</h5>
+                            <p id="resultadoTexto"></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary" onclick="calcularAngulo()">Calcular</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 2 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana2">
+                     <div class="h1 text-success text-center"><i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-triangle" viewBox="0 0 16 16">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                      </svg></i></div>
+                     <h2 class="h5 mt-4 text-center">2. Área de un triángulo</h2>
+                     
+                </div>
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">2. Área de un triángulo</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="ladoA" class="col-form-label">Lado a:</label>
+                                        <input type="text" class="form-control" id="ladoA" placeholder="Ingrese un valor mayor que 0">
+                                        <div id="alertaArea1" class="alert alert-danger" style="display: none;"></div>
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ladoB" class="col-form-label">Lado b:</label>
+                                        <input type="text" class="form-control" id="ladoB" placeholder="Ingrese un valor mayor que 0">
+                                        <div id="alertaArea2" class="alert alert-danger" style="display: none;"></div>
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ladoC" class="col-form-label">Lado c:</label>
+                                        <input type="text" class="form-control" id="ladoC" placeholder="Ingrese un valor mayor que 0">
+                                        <div id="alertaArea3" class="alert alert-danger" style="display: none;"></div>
+
+                                    </div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoArea"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="calcularArea()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 3 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana3">
+                     <div class="h1 text-success text-center"><i> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-123" viewBox="0 0 16 16">
+                        <path d="M2.873 11.297V4.142H1.699L0 5.379v1.137l1.64-1.18h.06v5.961zm3.213-5.09v-.063c0-.618.44-1.169 1.196-1.169.676 0 1.174.44 1.174 1.106 0 .624-.42 1.101-.807 1.526L4.99 10.553v.744h4.78v-.99H6.643v-.069L8.41 8.252c.65-.724 1.237-1.332 1.237-2.27C9.646 4.849 8.723 4 7.308 4c-1.573 0-2.36 1.064-2.36 2.15v.057zm6.559 1.883h.786c.823 0 1.374.481 1.379 1.179.01.707-.55 1.216-1.421 1.21-.77-.005-1.326-.419-1.379-.953h-1.095c.042 1.053.938 1.918 2.464 1.918 1.478 0 2.642-.839 2.62-2.144-.02-1.143-.922-1.651-1.551-1.714v-.063c.535-.09 1.347-.66 1.326-1.678-.026-1.053-.933-1.855-2.359-1.845-1.5.005-2.317.88-2.348 1.898h1.116c.032-.498.498-.944 1.206-.944.703 0 1.206.435 1.206 1.07.005.64-.504 1.106-1.2 1.106h-.75z"/>
+                      </svg></i></div>
+                     <h2 class="h5 mt-4 text-center">3. Antecesor, sucesor, raíz cuadrada y cantidad de cifras </h2>
+                </div>
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">3. Antecesor, sucesor, raíz cuadrada y cantidad de cifras</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="ladoA" class="col-form-label">Ingrese un número:</label>
+                                        <input type="text" class="form-control" id="numero" >
+                                        <div id="alertaEjer3" class="alert alert-danger" style="display: none;"></div>
+
+                                    </div>
+                                    
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoEjer3"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="calcularEjer3()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Ejercicio 4 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana4">
+                    <div class="h1 text-success text-center"><i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                        <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                        <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                      </svg></i></div>
+                    <i class="bi bi-triangle"></i>
+                    <h2 class="h5 mt-4 text-center">4. Paga neta de un trabajador</h2>
+                </div>
+                     <!-- Ventana modal -->
+                <div class="modal fade" id="ventana4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">4. Paga neta de un trabajador</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="horasTrabajadas" class="col-form-label">Horas trabajadas:</label>
+                                        <input type="text" class="form-control" id="horasTrabajadas" placeholder="Ingrese un valor entero mayor que 0">
+                                        <div id="alertaEjer4_1" class="alert alert-danger" style="display: none;"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="tarifaHoraria" class="col-form-label">Tarifa horaria:</label>
+                                        <input type="text" class="form-control" id="tarifaHoraria"  placeholder="Ingrese un valor mayor que 0">
+                                        <div id="alertaEjer4_2" class="alert alert-danger" style="display: none;"></div>
+                                
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="tasaImpuestos" class="col-form-label">Tasa de impuestos (porcentaje):</label>
+                                        <input type="text" class="form-control" id="tasaImpuestos"  placeholder="Ingrese un valor mayor que 0">
+                                        <div id="alertaEjer4_3" class="alert alert-danger" style="display: none;"></div>
+                                    </div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoEjer4"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="calcularEjer4()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Ejercicio 5 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana5">
+                    <div class="h1 text-success text-center"><i> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
+                        <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0M4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                      </svg></i></div>
+                    <h2 class="h5 mt-4 text-center">5. Capital final de un interés simple</h2>
+                </div>
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">5. Capital final de un interés simple</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="capitalInicial" class="col-form-label">Capital inicial:</label>
+                                        <input type="text" class="form-control" id="capitalInicial" placeholder="Ingrese un valor de capital mayor que 0">
+                                        <div id="alertaEjer5_1" class="alert alert-danger" style="display: none;"></div>
+                                    
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="tasaInteres" class="col-form-label">Tasa de interés (porcentaje):</label>
+                                        <input type="text" class="form-control" id="tasaInteres" placeholder="Ingrese un valor entre [1-100]">
+                                        <div id="alertaEjer5_2" class="alert alert-danger" style="display: none;"></div>
+                                   
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="tiempo" class="col-form-label">Tiempo (años):</label>
+                                        <input type="number" class="form-control" id="tiempo" min="1" max="100">
+                                        <div id="alertaEjer5_3" class="alert alert-danger" style="display: none;"></div>
+                                   
+                                    </div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoEjer5"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="calcularEjer5()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="steady-webbing-456214-i6"
+  agent-id="3706533f-42f4-4b33-9c1a-c5ed37f768b2"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+    chat-title="alex_17">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Todos los derechos recervados &copy; 2024 | Diseñado por Jeferson Charco 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+</html>

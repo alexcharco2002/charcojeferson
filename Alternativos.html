@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicios Alternativos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/js.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- scrip-->
+    <script src="App2.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Js
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Secuenciales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Alternativos.html">Alternativos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Repeticion.html">Repetición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Otros.html">Otros</a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    
+   
+
+    <!-- Start Section -->
+    <section class="container py-5">
+        <div class="row text-center pt-5 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Ejercicios Alternativos</h1>
+                
+            </div>
+        </div>
+        <div class="row">
+            <!-- Ejercicio 6 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana6">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">6. Clasificar la nota de un estudiante</h2>
+                </div>
+                
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">6. Clasificar la nota de un estudiante</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nota" class="col-form-label">Nota del estudiante:</label>
+                                        <input type="text" class="form-control" id="nota"  placeholder="Ingrese un valor entre [0-100] ">
+                                        <div id="alerta1" class="alert alert-danger" style="display: none;"></div>
+                                    </div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoNota"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="clasificarNota()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ejercicio 7 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana7">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">7. Clasificación de números</h2>
+                </div>
+                
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">7. Clasificación de números</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="numero" class="col-form-label">Ingrese un número:</label>
+                                        <input type="text" class="form-control" id="numero">
+                                        <div id="alerta2" class="alert alert-danger" style="display: none;"></div>
+                                    </div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoNum"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="clasificarNumero()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 8 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana8">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-calculator-fill" viewBox="0 0 16 16">
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5m0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">8. Soluciones de la ecuación de la forma ax^2 + bx +c</h2>
+                </div>
+
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">8. Soluciones de la ecuación de la forma ax^2 + bx +c</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="coefA" class="col-form-label">Coeficiente a:</label>
+                                        <input type="text" class="form-control" id="coefA">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="coefB" class="col-form-label">Coeficiente b:</label>
+                                        <input type="text" class="form-control" id="coefB">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="coefC" class="col-form-label">Coeficiente c:</label>
+                                        <input type="text" class="form-control" id="coefC">
+                                    </div>
+                                    <div id="alerta8" class="alert alert-danger" style="display: none;"></div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoEcuacion"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="calcularEcuacion()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ejercicio 9 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana9">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">9. Compañía de alquiler de automóviles</h2>
+                </div>
+
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">9. Compañía de alquiler de automóviles</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="kmRecorridos" class="col-form-label">Kilómetros recorridos:</label>
+                                        <input type="text" class="form-control" id="kmRecorridos" placeholder="Ingrese un valor mayor que 0">
+                                        <div id="alerta9" class="alert alert-danger" style="display: none;"></div>
+                                    </div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoAlquiler"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="calcularAlquiler()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 10 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana10">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                <path d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">10. Calculadora de la edad de una persona</h2>
+                </div>
+
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">10. Calculadora de la edad de una persona</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="diaNacimiento" class="col-form-label">Ingrese su fecha de nacimiento:</label>
+                                        <input type="date" class="form-control" id="diaNacimiento">
+                                    </div>
+                                    <div id="alerta10" class="alert alert-danger" style="display: none;"></div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <p id="resultadoEdad"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="calcularEdad()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Todos los derechos recervados &copy; 2024 | Diseñado por Jeferson Charco 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>

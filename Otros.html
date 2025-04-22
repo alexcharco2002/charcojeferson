@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Otros Ejercicios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/js.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="styleVoz.css">
+    <!-- scrip-->
+    <script src="App4.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+   
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Js
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Secuenciales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Alternativos.html">Alternativos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Repeticion.html">Repetición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Otros.html">Otros</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Start Section -->
+    <section class="container py-5">
+        <div class="row text-center pt-5 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Otros Ejercicios</h1>
+                
+            </div>
+        </div>
+        <div class="row">
+           <!-- Ejercicio 16 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana16">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+                                <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">16. Interfaz de voz</h2>
+                </div>
+                
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="exampleModalLabel">16. Interfaz de voz</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                
+                                <div class="containervoz">
+                                    <div class="controls">
+                                        <button id="btnStart">ESCUCHAR</button>
+                                        <button id="btnStop">DETENER</button>
+                                        <button id="btnRead">LEER TEXTO</button>
+                                    </div>
+                                    <textarea id="textArea" cols="30" rows="10" placeholder="Escriba algo aquí..."></textarea>
+                                </div>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 17 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana17">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
+                                <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2M3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
+                                <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.95 11.95 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">17. Contador de Letras</h2>
+                </div>
+                
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">17. Contador de Letras</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="oracionInput" class="col-form-label">Ingrese una oración:</label>
+                                        <input type="text" class="form-control" id="oracionInput">
+                                    </div>
+                                </form>
+                                <h5>Resultado</h5>
+                                <pre id="resultadoLetras"></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="contarLetras()">Contar Letras</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 18 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana18">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-browser-safari" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.25-14.75v1.5a.25.25 0 0 1-.5 0v-1.5a.25.25 0 0 1 .5 0m0 12v1.5a.25.25 0 1 1-.5 0v-1.5a.25.25 0 1 1 .5 0M4.5 1.938a.25.25 0 0 1 .342.091l.75 1.3a.25.25 0 0 1-.434.25l-.75-1.3a.25.25 0 0 1 .092-.341m6 10.392a.25.25 0 0 1 .341.092l.75 1.299a.25.25 0 1 1-.432.25l-.75-1.3a.25.25 0 0 1 .091-.34ZM2.28 4.408l1.298.75a.25.25 0 0 1-.25.434l-1.299-.75a.25.25 0 0 1 .25-.434Zm10.392 6 1.299.75a.25.25 0 1 1-.25.434l-1.3-.75a.25.25 0 0 1 .25-.434ZM1 8a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 0 .5h-1.5A.25.25 0 0 1 1 8m12 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 1 1 0 .5h-1.5A.25.25 0 0 1 13 8M2.03 11.159l1.298-.75a.25.25 0 0 1 .25.432l-1.299.75a.25.25 0 0 1-.25-.432Zm10.392-6 1.299-.75a.25.25 0 1 1 .25.433l-1.3.75a.25.25 0 0 1-.25-.434ZM4.5 14.061a.25.25 0 0 1-.092-.341l.75-1.3a.25.25 0 0 1 .434.25l-.75 1.3a.25.25 0 0 1-.342.091m6-10.392a.25.25 0 0 1-.091-.342l.75-1.299a.25.25 0 1 1 .432.25l-.75 1.3a.25.25 0 0 1-.341.09ZM6.494 1.415l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M9.86 13.972l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M3.05 3.05a.25.25 0 0 1 .354 0l.353.354a.25.25 0 0 1-.353.353l-.354-.353a.25.25 0 0 1 0-.354m9.193 9.193a.25.25 0 0 1 .353 0l.354.353a.25.25 0 1 1-.354.354l-.353-.354a.25.25 0 0 1 0-.353M1.545 6.01l.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.482Zm12.557 3.365.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.483m-12.863.436a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177m12.557-3.365a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177M3.045 12.944a.3.3 0 0 1-.029-.376l3.898-5.592a.3.3 0 0 1 .062-.062l5.602-3.884a.278.278 0 0 1 .392.392L9.086 9.024a.3.3 0 0 1-.062.062l-5.592 3.898a.3.3 0 0 1-.382-.034zm3.143 1.817a.25.25 0 0 1-.176-.306l.129-.483a.25.25 0 0 1 .483.13l-.13.483a.25.25 0 0 1-.306.176M9.553 2.204a.25.25 0 0 1-.177-.306l.13-.483a.25.25 0 1 1 .483.13l-.13.483a.25.25 0 0 1-.306.176"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">18. Ruleta de Números Aleatorios</h2>
+                </div>
+
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">18. Ruleta de Números Aleatorios</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Escoja un Número:</h5>
+                                <input type="number" id="numeroUsuario" class="form-control" min="10" max="80" step="10">
+                                
+                                <h5>Número Aleatorio:</h5>
+                                <p id="numDeIntentos" class="fs-3 text-center">Número de intentos: 2</p>
+                                <div class="contedor">
+                                    <div class="spinBtn" onclick="girarRuleta()">Girar</div>
+                                    <div class="wheel">
+                                        <div class="number" style="--i:1;--clr: #db7093;"><span>10</span></div>
+                                        <div class="number" style="--i:2;--clr: #20b2aa;"><span>20</span></div>
+                                        <div class="number" style="--i:3;--clr: #d63e92;"><span>30</span></div>
+                                        <div class="number" style="--i:4;--clr: #daa520;"><span>40</span></div>
+                                        <div class="number" style="--i:5;--clr: #ff340f;"><span>50</span></div>
+                                        <div class="number" style="--i:6;--clr: #ff7f50;"><span>60</span></div>
+                                        <div class="number" style="--i:7;--clr: #3cb371;"><span>70</span></div>
+                                        <div class="number" style="--i:8;--clr: #4169e1;"><span>80</span></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p id="numeroAleatorio" class="fs-3 text-center"></p>
+                                
+                                <h5>Resultado del Juego:</h5>
+                                <p id="resultadoJuego" class="fs-3 text-center">Esperando...</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <script src="scripts.js"></script>
+            </body>
+            </html>
+            
+            <!-- Ejercicio 19 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana19">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                                <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">19. Conversor de Código Morse</h2>
+                </div>
+
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">19. Conversor de Código Morse</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-around mb-3">
+                                    <button type="button" class="btn btn-primary" onclick="mostrarTextoAMorse()">Convertir Texto a Morse</button>
+                                    <button type="button" class="btn btn-primary" onclick="mostrarMorseATexto()">Convertir Morse a Texto</button>
+                                </div>
+                                <div id="opcionTextoAMorse" class="d-none">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="textoInput" class="col-form-label">Ingrese un texto:</label>
+                                            <input type="text" class="form-control" id="textoInput" placeholder="Ingrese un texto">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="resultadoMorse" class="col-form-label">Resultado en Código Morse:</label>
+                                            <textarea class="form-control" id="resultadoMorse" rows="3" readonly></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="opcionMorseATexto" class="d-none">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="morseInput" class="col-form-label">Ingrese código Morse:</label>
+                                            <input type="text" class="form-control" id="morseInput" placeholder="Ingrese código Morse">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="resultadoTexto" class="col-form-label">Resultado en Texto:</label>
+                                            <textarea class="form-control" id="resultadoTexto" rows="3" readonly></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary d-none" id="botonConvertir" onclick="convertir()">Convertir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 20 -->
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow" data-bs-toggle="modal" data-bs-target="#ventana20">
+                    <div class="h1 text-success text-center">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+                              </svg>
+                        </i>
+                    </div>
+                    <h2 class="h5 mt-4 text-center">20. Tienda de víveres </h2>
+                </div>
+                
+                <!-- Ventana modal -->
+                <div class="modal fade" id="ventana20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">20. Tienda de víveres</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="productoInput" class="col-form-label">Ingrese el nombre del producto:</label>
+                                    <input type="text" class="form-control" id="productoInput" placeholder="Nombre del producto">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ventasInput" class="col-form-label">Ingrese las ventas separadas por comas (lunes a viernes):</label>
+                                    <input type="text" class="form-control" id="ventasInput" placeholder="Ej: 5,3,0,2,4">
+                                </div>
+                                <div id="alertaArea1" class="alert alert-danger" style="display: none;"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="agregarProducto()">Agregar</button>
+                                <button type="button" class="btn btn-success" onclick="calcularProductos()">Calcular</button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="resultados"></div>
+                                <canvas id="graficoVentas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+
+    
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Todos los derechos recervados &copy; 2024 | Diseñado por Jeferson Charco 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
